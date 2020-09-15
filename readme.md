@@ -16,7 +16,14 @@ Use of the site is simple, create an account, use the search feature, save shows
 
 
 # Layout
-
+## Explore Page
 ![Explore](Images/Explore_Page.png)
+
+## Profile Page
 ![Profile](Images/Profile_Page.png)
+
+## Cards
 ![Cards](Images/Individual_Cards.png)
+
+## ERD
+![ERD](Images/ERD_Draft.png)
