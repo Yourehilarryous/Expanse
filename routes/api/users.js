@@ -5,12 +5,10 @@ const jwt = require('jsonwebtoken')
 const config = require('config')
 const { check, validationResult } = require("express-validator");
 
-//bring in the user model
 const User = require('../../models/User')
 
-//@route    GET users
-//@desc     Regiester User
-//@access   Public
+//route    POST api/users
+//desc     Regiester User
 router.post("/",
     [
         check("name", "Name is required")

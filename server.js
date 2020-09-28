@@ -1,5 +1,7 @@
 const express = require ("express")
+const cors = require("cors")
 const connectDB = require("./config/db")
+
 
 const app = express()
 
@@ -8,6 +10,15 @@ connectDB()
 
 // Init middleware
 app.use(express.json({extended: false}))
+
+//CORS config 
+const corsOptions = {
+    origin: ['http://localhost:3001'],
+    credentials: true,
+    optionsSucessStatus: 204
+}
+
+app.use(cors(corsOptions))
 
 
 app.get ("/", (req, res) => {
